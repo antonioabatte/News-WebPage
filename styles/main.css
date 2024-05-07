@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../src/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 151;
+    font-style: normal;
+}
+
+
+.TopBar{
+    width: 1920px;
+    height: 475px;
+    background-color: black;
+}
+.logo{     
+    width: 229px;
+    height: 64px; 
+    margin-top: 48px;
+    margin-left: 200px;
+}
+
+.SearchBar{
+    flex-grow: 1;
+    top: 10px;
+    margin-left: 600px;
+    width: 636px;
+    height: 40px;
+    background-color: #04594D;
+}
