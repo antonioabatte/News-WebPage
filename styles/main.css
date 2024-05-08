@@ -10,19 +10,42 @@
     width: 1920px;
     height: 475px;
     background-color: black;
+    display:flex;
+    flex-direction:row;
 }
 .logo{     
     width: 229px;
-    height: 64px; 
+    height: 64px;
     margin-top: 48px;
     margin-left: 200px;
 }
 
+.nav-link{
+    width: 229px;
+    height: 64px;
+}
+
 .SearchBar{
-    flex-grow: 1;
-    top: 10px;
-    margin-left: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 57px;
+    margin-left: 400px;
     width: 636px;
     height: 40px;
+}
+
+.SearchBar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
     background-color: #04594D;
+}
+
+.SearchBar button {
+    background-color: #8E4042;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
 }
