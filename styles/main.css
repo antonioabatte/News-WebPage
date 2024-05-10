@@ -123,18 +123,19 @@ body {
     width: 1125px;
     height: 500px;
     position: absolute;
-    margin-top: 210px;
+    top: 210px;
     left: 200px;
     background-color: white;
+
 }
 
 .Main {
-    top: 20px;
-    margin-left: 20px;
+    top:20px;
+    left: 25px; 
     width: 599px;
     height: 365px;
+    position: absolute;
     overflow: hidden;
-    position: relative;
     border-radius: 10px;
 }
 
@@ -177,14 +178,71 @@ body {
     font-family: 'OpenSans-Bold.ttf';
 }
 
-.LowNews {
-    width: 599px;
-    height: 105px;
-    margin-top: 20px;
-    margin-left: 20px;
+.Main2 {
+    height: 265px;
+    width: 476px;
+    top: 0px;
+    left: 649px;
+    background-color:#1A1A1A;
+    position: absolute;
     display: flex;
-    /*flex-direction: column;*/
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main2News {
+    width: 426px;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ImageContainer {
+    position: relative;
+}
+
+.Description {
+    width: 50%;
+    color: #DCDCDC;
+    text-align: left;
+    font-family: 'OpenSans-Bold.ttf';
+}
+
+.ImageText {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 5px;
+    /*transform: translateX(-50%);*/
+    color: #fff;
+    font-family: 'OpenSans-Bold.ttf';
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    user-select: none;
+}
+
+.ImageContainer img {
+    width: 222px;
+    height: 218px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ImageContainer img:hover {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.LowNews {
+    width: 610px;
+    height: 110px;
+    top: 400px;
+    left: 25px;
+    position: absolute;
+    display: flex;
+    justify-items: flex-start;
     align-items: flex-start;
 
 }
