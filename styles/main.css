@@ -1,18 +1,30 @@
 @font-face {
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Regular.ttf';
     src: url('../src/fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 151;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OpenSans-Bold.ttf';
+    src: url('../src/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-style: normal;
+}
 
+body {
+    overflow-y: scroll;
+}
+
+.gray-bg {
+    background-color: #DCDCDC;
+}
 .TopBar{
-    width: 1920px;
+    width: 1519px;
     height: 475px;
     background-color: black;
     display:flex;
     flex-direction:row;
 }
+
 .logo{     
     width: 229px;
     height: 64px;
@@ -20,17 +32,16 @@
     margin-left: 200px;
 }
 
-.nav-link{
+.nav-link {
     width: 229px;
     height: 64px;
 }
-
 .SearchBar{
     display: flex;
     align-items: center;
     margin-top: 57px;
     margin-left: 400px;
-    width: 636px;
+    width: 695px;
     height: 40px;
 }
 
@@ -40,6 +51,7 @@
     border: none;
     outline: none;
     background-color: #04594D;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .SearchBar button {
@@ -48,4 +60,154 @@
     border: none;
     padding: 8px 12px;
     cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.SearchBar button:hover {
+    
+  }
+
+.SearchBar button:active {
+    color: darkgrey;
+    background-color: crimson ;
+}
+
+.NavBar {
+    width: 1125px; 
+    height: 50px; 
+    position: absolute; 
+    top: 160px; 
+    left: 200px; 
+    background-color: #1A1A1A; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.NavOptions {
+    display: left;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.NavOptions button {
+    background-color: #1A1A1A; 
+    color: #fff; 
+    border: none; 
+    padding: 8px 12px; 
+    cursor: pointer; 
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.NavOptions button:hover {
+    background-color: #04594D;
+}
+
+.weather {
+    width: 23px;
+    height: 19px;
+}
+
+.weather-time span {
+    margin-right: 10px; 
+    color: #fff; 
+}
+
+.MainNews {
+    width: 1125px;
+    height: 500px;
+    position: absolute;
+    margin-top: 210px;
+    left: 200px;
+    background-color: white;
+}
+
+.Main {
+    top: 20px;
+    margin-left: 20px;
+    width: 599px;
+    height: 365px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 365px;
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1); /* Zoom de 110% ao passar o mouse */
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* d-none d-md-block */
+
+.carousel-caption {
+    position: absolute;
+    top:75%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.carousel-caption h3{
+    font-family: 'OpenSans-Bold.ttf';
+}
+
+.carousel-caption p{
+    font-family: 'OpenSans-Bold.ttf';
+}
+
+.LowNews {
+    width: 599px;
+    height: 105px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.LowNews h4 {
+    font-family: 'OpenSans-Bold.ttf';
+    color:crimson;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.LowNews p {
+    font-family: 'OpenSans-Bold.ttf';
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+}
+
+.image {
+    height: 72px;   
+    width: 122px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
