@@ -1,128 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsLetter</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/fonts/">
 </head>
 
-<body class = "gray-bg">
+<body class="gray-bg">
     <header>
-        <div class = "header">
-            <div class = "TopBar">
-            <a class = "nav-link" href="index.html"> <img src= "./src/assets/logo2.svg" class = "logo" /> </a>
-            <div class = "SearchBar">
-                <input type="text" placeholder="Pesquisar...">
-                <button type="button">PESQUISAR</button>
+        <div class="header">
+            <div class="TopBar">
+                <a class="nav-link" href="index.html"> <img src="./src/assets/logo2.svg" class="logo" /> </a>
+                <div class="SearchBar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="button">PESQUISAR</button>
+                </div>
+                <div class="NavBar">
+                    <div class="NavOptions">
+                        <button>Mundo</button>
+                        <button>Economia</button>
+                        <button>Tecnologia</button>
+                        <button>Clima</button>
+                        <button>Entretenimento</button>
+                        <button>Esportes</button>
+                        <button>Política</button>
+                        <button>Educação</button>
+                    </div>
+                    <div class="weather-time">
+                        <span>14:30</span>
+                        <span> <img src="./src/assets/icons8-clima-de-maçã-23.svg" class="weather" /> 25°C </span>
+                    </div>
+                </div>
             </div>
-        <div class = "NavBar">
-            <div class = "NavOptions">
-                <button>Mundo</button>
-                <button>Economia</button>
-                <button>Tecnologia</button>
-                <button>Clima</button>
-                <button>Entretenimento</button>
-                <button>Esportes</button>
-                <button>Política</button>
-                <button>Educação</button>
+            <div class="container">
+                <div class="MainNews">
+                    <div class="Main">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="8000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/assets/borussia_classificado_x_final_da_champions.jpg_1650284593.jpg"
+                                        class="d-block w-100" alt="...">
+                                    <div class="carousel-caption">
+                                        <h3>Borussia Dortmund Classificado</h3>
+                                        <p>Borussia Dortmund se Classifica para a final</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/assets/Captura-de-tela-2024-05-07-080553.png" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption">
+                                        <h3>Tragédia no Rio Grande do Sul</h3>
+                                        <p>Chuvas Inundam o Estado do Rio Grande do Sul e deixa milhares desabrigados
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/assets/farmacia-popular-rs-3-.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption">
+                                        <h3>IPCA: preços sobem 0,38% em abril</h3>
+                                        <p>Medicamentos e Alimentos mais caros</p>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais depois -->
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="LowNews">
+                        <div class="Content">
+                            <h4>Volta a Chover em Porto Alegre</h4>
+                            <p>Região metropolitana de Porto Alegre deve registrar grandes volumes de chuva nos próximos
+                                dias. Precipitação nas bacias que abastecem o Guaíba podem agravar situação das
+                                inundações.</p>
+                        </div>
+                        <img src="./src/assets/enchente.jpg" class="image">
+                    </div>
+
+                    <div class="Clima">
+                        <div class="TimeContainer">
+                            <h4>Clima</h4>
+                            <!--<img src="./src/assets/icons8-clima-de-maçã.svg">-->
+                        </div>
+                        <div class="Time">
+                            <h5>Teresina</h5>
+                            <img src="./src/assets/icons8-clima.svg">
+                            <p>33° Max</p>
+                            <p>26° Min</p>
+                        </div>
+                    </div>
+
+                    <div class="Papers">
+                        <div class="Titulo">
+                            <h5>Ministro do Esporte pede à CBF paralisação do Brasileirão</h5>
+                            <p>Por <span class="Autor">Pedro Henrique </span> Maio. 10, 2024 </p>
+                        </div>
+                        <div class="Noticia">
+                            <p>Pedido foi enviado ao presidente da Confederação Brasileira de Futebol, Ednaldo
+                                Rodrigues, em razão das fortes chuvas que atingem o Rio Grande do Sul.</p>
+                        </div>
+                    </div>
+
+                    <div class="Main2">
+                        <div class="Main2News">
+                            <p class="Description">A partir do ano que vem, as empresas voltarão a contribuir com a
+                                Previdência, com imposto de 5% sobre o total da remuneração dos funcionários. Haverá um
+                                crescimento gradual da alíquota, que vai atingir 20% em 2028.</p>
+                            <div class="ImageContainer">
+                                <img src="./src/assets/Coletiva.jpg" class="ImageNews">
+                                <p class="ImageText">Desoneração com retomada gradual de imposto</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class = "weather-time">
-                <span>14:30</span>
-                <span> <img src = "./src/assets/icons8-clima-de-maçã-23.svg" class = "weather" /> 25°C </span>              
+            <div class="LastNews">
+                <h1>Últimas Notícias</h1>
+                <div id = "noticiaOriginal" class="imagemNoticia">
+                    <div class="imageContainer2" >
+                        <img src="./src/assets/vitor-roque.png" alt="Imagem">
+                        <div class="DetalheNoticia">
+                            <h4 class="pricipal">Barcelona decide futuro de Vitor Roque</h4>
+                            <p style="margin: 5px 0 0;">Por <span class = "autor2" style="color:burlywood ;">O Lance</span> <span
+                                    class="Data"> Maio. 13, 2024 </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="PapersLarge">
+                    <div class="PapersTitle">
+                        <h5 style="font-weight: bold; font-family: Georgia;">1º Encontro de Produtores de Queijos e Charcutaria Paulista acontece em SP</h5>
+                        <p>Por <span class="Autor3">Tatiana Pormann </span> Maio. 13, 2024 </p>
+                    </div>
+                    <div class="PapersNews">
+                        <p>Nos dias 24 e 25 de maio acontecerá o 1° Encontro de Produtores de Queijos e Charcutaria Paulista. Com mais de 50 produtores artesanais de queijo e charcutaria do estado de São Paulo, o evento irá proporcionar uma experiência de degustação, além de venda de produtos autorais.
+
+                            O local escolhido para o evento, o Mercado Municipal de Pinheiros, é uma memória viva da alimentação paulista da Zona Oeste. Em 1910, era conhecido como o “mercado dos caipiras”, já que muitos produtores do interior do estado o escolhiam como local para vendas.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-            <div class = "container">
-            <div class = "MainNews"> 
-                <div class="Main">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./src/assets/borussia_classificado_x_final_da_champions.jpg_1650284593.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption">
-                                    <h3>Borussia Dortmund Classificado</h3>
-                                    <p>Borussia Dortmund se Classifica para a final</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./src/assets/Captura-de-tela-2024-05-07-080553.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption">
-                                    <h3>Tragédia no Rio Grande do Sul</h3>
-                                    <p>Chuvas Inundam o Estado do Rio Grande do Sul e deixa milhares desabrigados</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./src/assets/farmacia-popular-rs-3-.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption">
-                                    <h3>IPCA: preços sobem 0,38% em abril</h3>
-                                    <p>Medicamentos e Alimentos mais caros</p>
-                                </div>
-                            </div>
-                            <!-- Adicionar mais depois -->
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
-                    </div>
-                </div>
-                <div class = "LowNews">
-                    <div class = "Content">
-                    <h4>Volta a Chover em Porto Alegre</h4>
-                    <p>Região metropolitana de Porto Alegre deve registrar grandes volumes de chuva nos próximos dias. Precipitação nas bacias que abastecem o Guaíba podem agravar situação das inundações.</p>
-                    </div>
-                    <img src="./src/assets/enchente.jpg" class="image">
-                </div>
 
-                <div class = "Clima">
-                    <div class = "TimeContainer">
-                        <h4>Clima</h4>
-                        <!--<img src="./src/assets/icons8-clima-de-maçã.svg">-->
-                    </div>
-                    <div class ="Time">
-                        <h5>Teresina</h5>
-                        <img src="./src/assets/icons8-clima.svg"> <p>33° Max</p> <p>26° Min</p>
-                    </div>
-                </div>
 
-                <div class = "Papers">
-                    <div class = "Titulo">
-                        <h5>Ministro do Esporte pede à CBF paralisação do Brasileirão</h5>
-                        <p>Por <span class = "Autor">Pedro Henrique </span> Maio. 10, 2024 </p>
-                    </div>
-                    <div class = "Noticia">
-                        <p>Pedido foi enviado ao presidente da Confederação Brasileira de Futebol (CBF), Ednaldo Rodrigues, em razão das fortes chuvas que atingem o Rio Grande do Sul.</p>
-                    </div>
-                </div>
-
-                
-
-                 <div class="Main2">
-                    <div class = "Main2News">
-                        <p class = "Description">A partir do ano que vem, as empresas voltarão a contribuir com a Previdência, com imposto de 5% sobre o total da remuneração dos funcionários. Haverá um crescimento gradual da alíquota, que vai atingir 20% em 2028.</p>
-                        <div class = "ImageContainer">    
-                        <img src="./src/assets/Coletiva.jpg" class = "ImageNews">                
-                        <p class = "ImageText">Desoneração com retomada gradual de imposto</p>
-                        </div> 
-                    </div>                    
-                    </div>
-
-            </div> 
-                
-                
-            </div>             
-
-            </div>
         </div>
         </div>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...">
-    </script>
+    <footer style="background-color: black; margin-top: 3500px; height: 200px; ">
+        <a href="index.html"> <img src="./src/assets/logo2.svg" class="logo" /> </a>
+        <span style="color: white;">2024. NewsLetter 0.6</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."></script>
+    <script src="./src/scripts/script.js"></script>
 </body>

@@ -12,6 +12,7 @@
 
 body {
     overflow-y: scroll;
+    height: 4000px;
 }
 
 .gray-bg {
@@ -141,7 +142,7 @@ body {
 }
 
 .carousel-item {
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: center;
     height: 365px;
@@ -156,12 +157,10 @@ body {
 }
 
 .carousel-item img:hover {
-    transform: scale(1.1); /* Zoom de 110% ao passar o mouse */
+    transform: scale(1.1); 
     cursor: pointer;
     z-index: 1;
 }
-
-/* d-none d-md-block */
 
 .carousel-caption {
     position: absolute;
@@ -206,9 +205,10 @@ body {
 
 .Description {
     width: 50%;
+    height: 85%;
     color: #DCDCDC;
-    text-align: left;
-    font-family: 'OpenSans-Bold.ttf';
+    padding: 5px;
+    font-family: Georgia;
 }
 
 .ImageText {
@@ -290,10 +290,12 @@ body {
 
 .Titulo h5 {
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .Titulo p {
     font-size: 15px;
+    margin-left: 15px;
 }
 
 .Autor {
@@ -310,6 +312,7 @@ body {
 }
 
 .Noticia p {
+    padding: 5px;
     color: #04594D;
     font-family: Georgia;
     text-indent: 20px;
@@ -344,6 +347,7 @@ body {
 .TimeContainer h4 {
     font-size: 30px;
     font-family: 'OpenSans-Bold.ttf';
+    margin-left: 10px;
 }
 
 .TimeContainer img {
@@ -359,9 +363,86 @@ body {
 .Time p {
     font-size: 15px;
     margin: 0;
+    font-weight: bold;
 }
 
 .Time h5{
     font-weight: bold;
 }
 /*#162E58*/
+
+.LastNews h1{
+    margin-top: 260px;
+    margin-left: 200px;
+    font-weight: bold;
+    font-family: Georgia;
+
+}
+
+.imagemNoticia {
+    left: 200px;
+    top: 820px;
+    height: 390px;
+    width: 400px;
+    position: absolute;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imageContainer2 {
+    position: relative;
+}
+
+.imagemNoticia img {
+    transition: transform 0.4s;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.imagemNoticia img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.DetalheNoticia {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    pointer-events: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.PapersLarge {
+    max-height: 425px;
+    width: 400px;
+    margin-top: 440px;
+    margin-left: 619px;
+    background-color: #e6e6e6;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.PapersTitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    flex: 0 0 25%;
+    overflow: hidden;
+    border-bottom: 2px solid #DCDCDC;
+}
+
+.Autor3 {
+    color: #8E4042;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.PapersNews {
+    color: #04594D;
+    font-family: Georgia;
+    padding: 10px;
+}
