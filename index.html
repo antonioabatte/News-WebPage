@@ -15,30 +15,34 @@
     <header>
         <div class="header">
             <div class="TopBar">
-                <a class="nav-link" href="index.html"> <img src="./src/assets/logo2.svg" class="logo" /> </a>
+                <div class="logo">
+                   <a href="#index"> <img src="./src/assets/logo2.svg" /> </a>
+                </div>
                 <div class="SearchBar">
                     <input type="text" placeholder="Pesquisar...">
                     <button type="button">PESQUISAR</button>
                 </div>
-                <div class="NavBar">
-                    <div class="NavOptions">
-                        <button>Mundo</button>
-                        <button>Economia</button>
-                        <button>Tecnologia</button>
-                        <button>Clima</button>
-                        <button>Entretenimento</button>
-                        <button>Esportes</button>
-                        <button>Política</button>
-                        <button>Educação</button>
-                    </div>
-                    <div class="weather-time">
-                        <span>14:30</span>
-                        <span> <img src="./src/assets/icons8-clima-de-maçã-23.svg" class="weather" /> 25°C </span>
-                    </div>
-                </div>
+
             </div>
             <div class="container">
+
                 <div class="MainNews">
+                    <div class="NavBar">
+                        <div class="NavOptions">
+                            <button>Mundo</button>
+                            <button>Economia</button>
+                            <button>Tecnologia</button>
+                            <button>Clima</button>
+                            <button>Entretenimento</button>
+                            <button>Esportes</button>
+                            <button>Política</button>
+                            <button>Educação</button>
+                        </div>
+                        <div class="weather-time">
+                            <span>14:30</span>
+                            <span> <img src="./src/assets/icons8-clima-de-maçã-23.svg" class="weather" /> 25°C </span>
+                        </div>
+                    </div>
                     <div class="Main">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
                             data-bs-interval="8000">
@@ -117,12 +121,15 @@
 
                     <div class="Main2">
                         <div class="Main2News">
-                            <p class="Description">A partir do ano que vem, as empresas voltarão a contribuir com a
-                                Previdência, com imposto de 5% sobre o total da remuneração dos funcionários. Haverá um
-                                crescimento gradual da alíquota, que vai atingir 20% em 2028.</p>
+                            <p class="Description">O governo federal e o Congresso chegaram a um acordo sobre a
+                                desoneração da folha de pagamento, decidindo pela reintrodução gradual dos impostos a
+                                partir de 2025. A notícia foi oficializada nesta quinta-feira (9) pelo ministro da
+                                Fazenda, Fernando Haddad. Com imposto de
+                                5% que irá atingir 20% em 2028.</p>
                             <div class="ImageContainer">
-                                <img src="./src/assets/Coletiva.jpg" class="ImageNews">
-                                <p class="ImageText">Desoneração com retomada gradual de imposto</p>
+                                <img src="./src/assets/haddad.png" class="ImageNews">
+                                <p class="ImageText">Governo e Congresso chegam a acordo sobre desoneração com retomada
+                                    gradual de imposto </p>
                             </div>
 
                         </div>
@@ -130,27 +137,56 @@
                 </div>
             </div>
             <div class="LastNews">
-                <h1>Últimas Notícias</h1>
-                <div id = "noticiaOriginal" class="imagemNoticia">
-                    <div class="imageContainer2" >
+                <div class="TrendPage">
+                    <div class="Trend">
+                        <h2>Mais Vistos</h2> <button type="button">Ver Todos</button>
+                    </div>
+                    <div id = "Trends" class="TrendNews">
+                        <div class="noticia2">
+                            <img src="./src/assets/o-duplo-segredo-rene-magritte.jpg" class = "TrendImage">
+                            <div class="descricao">
+                                <h5>Entenda o que é o surrealismo</h5>
+                                <p>
+                                    <scan class = "descricao2">Exposições sobre o surrealismo tomam o mundo no momento em que o movimento completa 100 anos</scan>
+                                </p>
+                                <div class = "info">
+                                    <p>Por <scan class = "Autor4" style="color: #8E4042; font-weight: bold; cursor: pointer;">Cath Pound</scan>
+                                        <scan class = "Data2" > Mar. 27, 2024</scan></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="LastN">
+                    <h1>Últimas Notícias</h1>
+                </div>
+                <div id="noticiaOriginal" class="imagemNoticia">
+                    <div class="imageContainer2">
                         <img src="./src/assets/vitor-roque.png" alt="Imagem">
                         <div class="DetalheNoticia">
                             <h4 class="pricipal">Barcelona decide futuro de Vitor Roque</h4>
-                            <p style="margin: 5px 0 0;">Por <span class = "autor2" style="color:burlywood ;">O Lance</span> <span
-                                    class="Data"> Maio. 13, 2024 </span>
+                            <p style="margin: 5px 0 0;">Por <span class="autor2" style="color:burlywood ;">O
+                                    Lance</span> <span class="Data"> Maio. 13, 2024 </span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="PapersLarge">
                     <div class="PapersTitle">
-                        <h5 style="font-weight: bold; font-family: Georgia;">1º Encontro de Produtores de Queijos e Charcutaria Paulista acontece em SP</h5>
+                        <h5 style="font-weight: bold; font-family: Georgia;">1º Encontro de Produtores de Queijos e
+                            Charcutaria Paulista acontece em SP</h5>
                         <p>Por <span class="Autor3">Tatiana Pormann </span> Maio. 13, 2024 </p>
                     </div>
                     <div class="PapersNews">
-                        <p>Nos dias 24 e 25 de maio acontecerá o 1° Encontro de Produtores de Queijos e Charcutaria Paulista. Com mais de 50 produtores artesanais de queijo e charcutaria do estado de São Paulo, o evento irá proporcionar uma experiência de degustação, além de venda de produtos autorais.
+                        <p>Nos dias 24 e 25 de maio acontecerá o 1° Encontro de Produtores de Queijos e Charcutaria
+                            Paulista. Com mais de 50 produtores artesanais de queijo e charcutaria do estado de São
+                            Paulo, o evento irá proporcionar uma experiência de degustação, além de venda de produtos
+                            autorais.
 
-                            O local escolhido para o evento, o Mercado Municipal de Pinheiros, é uma memória viva da alimentação paulista da Zona Oeste. Em 1910, era conhecido como o “mercado dos caipiras”, já que muitos produtores do interior do estado o escolhiam como local para vendas.</p>
+                            O local escolhido para o evento, o Mercado Municipal de Pinheiros, é uma memória viva da
+                            alimentação paulista da Zona Oeste. Em 1910, era conhecido como o “mercado dos caipiras”, já
+                            que muitos produtores do interior do estado o escolhiam como local para vendas.</p>
                     </div>
                 </div>
             </div>
@@ -164,6 +200,7 @@
         <a href="index.html"> <img src="./src/assets/logo2.svg" class="logo" /> </a>
         <span style="color: white;">2024. NewsLetter 0.6</span>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."></script>
     <script src="./src/scripts/script.js"></script>
 </body>

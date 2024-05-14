@@ -18,33 +18,32 @@ body {
 .gray-bg {
     background-color: #DCDCDC;
 }
+
 .TopBar{
     width: 1519px;
     height: 475px;
     background-color: black;
-    display:flex;
-    flex-direction:row;
+
 }
 
-.logo {     
-    width: 229px;
+.logo{
     height: 64px;
-    margin-top: 48px;
-    margin-left: 200px;
+
 }
 
-.nav-link {
+.logo img{
     width: 229px;
-    height: 64px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
 .SearchBar{
     display: flex;
     align-items: center;
-    margin-top: 57px;
-    margin-left: 400px;
-    width: 695px;
-    height: 40px;
+    margin-top: 1%;
+    margin-left: 45%;
+    width: 692px;
+
 }
 
 .SearchBar input[type="text"] {
@@ -75,11 +74,11 @@ body {
 }
 
 .NavBar {
-    width: 1125px; 
+    width: 1225px; 
     height: 50px; 
     position: absolute; 
-    top: 160px; 
-    left: 200px; 
+    margin-top: 0; 
+    left: 0; 
     background-color: #1A1A1A; 
     display: flex;
     justify-content: space-between;
@@ -122,17 +121,17 @@ body {
 }
 
 .MainNews {
-    width: 1125px;
-    height: 500px;
+    width: 1225px;
+    height: 550px;
     position: absolute;
-    top: 210px;
-    left: 200px;
+    top: 150px;
+    left: 10%;
     background-color: white;
 
 }
 
 .Main {
-    top:20px;
+    margin-top: 6%;
     left: 25px; 
     width: 599px;
     height: 365px;
@@ -179,10 +178,10 @@ body {
 }
 
 .Main2 {
-    height: 265px;
-    width: 476px;
-    top: 0px;
-    left: 649px;
+    height: 276px;
+    width: 576px;
+    top: 9%;
+    left: 53%;
     background-color:#1A1A1A;
     position: absolute;
     display: flex;
@@ -191,8 +190,8 @@ body {
 }
 
 .Main2News {
-    width: 426px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,35 +199,39 @@ body {
 }
 
 .ImageContainer {
+    height: 90%;
+    margin-right: 10px;
     position: relative;
+    margin-bottom: 0px;
+    object-fit: cover;
 }
 
 .Description {
     width: 50%;
-    height: 85%;
+    height: 90%;
     color: #DCDCDC;
     padding: 5px;
     font-family: Georgia;
 }
 
 .ImageText {
-    font-size: 14px;
+    font-size: 20px;
     position: absolute;
     bottom: 0px;
     margin-left: 5px;
     /*transform: translateX(-50%);*/
-    color: #fff;
-    font-family: 'OpenSans-Bold.ttf';
+    color: #e6e6e6;
+    font-family: Georgia;
+    font-weight: bold;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     pointer-events: none;
     user-select: none;
 }
 
 .ImageContainer img {
-    width: 222px;
-    height: 218px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .ImageContainer img:hover {
@@ -239,7 +242,7 @@ body {
 .LowNews {
     width: 610px;
     height: 110px;
-    top: 400px;
+    margin-top: 36%;
     left: 25px;
     position: absolute;
     display: flex;
@@ -259,7 +262,7 @@ body {
 
 .LowNews p {
     font-family: 'OpenSans-Bold.ttf';
-    font-size: 10px;
+    font-size: 11px;
     text-align: left;
     margin: 0;
 }
@@ -268,14 +271,14 @@ body {
     height: 72px;   
     width: 122px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .Papers {
     height: 205px;
-    width: 300px;
-    margin-top: 280px;
-    left: 800px;
+    width: 370px;
+    margin-top: 27%;
+    margin-left: 69%;
     background-color: #e6e6e6;
     position: absolute;
     display: flex;
@@ -319,10 +322,10 @@ body {
 }
 
 .Clima {
-    width: 140px;
+    width: 180px;
     height:205px;
     position: absolute;
-    top: 280px;
+    margin-top: 27%;
     left: 648px;
     display: flex;
     flex-direction: column;
@@ -336,8 +339,6 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: #DCDCDC;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     border-bottom: 2px solid #1A1A1A;
     display: flex;
     justify-content: flex-start;
@@ -372,15 +373,15 @@ body {
 /*#162E58*/
 
 .LastNews h1{
-    margin-top: 260px;
-    margin-left: 200px;
+    margin-top: 17%;
+    margin-left: 10%;
     font-weight: bold;
     font-family: Georgia;
 
 }
 
 .imagemNoticia {
-    left: 200px;
+    margin-left: 10%;
     top: 820px;
     height: 390px;
     width: 400px;
@@ -403,6 +404,7 @@ body {
 .imagemNoticia img:hover {
     transform: scale(1.1);
     cursor: pointer;
+    z-index: 1;
 }
 
 .DetalheNoticia {
@@ -419,8 +421,8 @@ body {
 .PapersLarge {
     max-height: 425px;
     width: 400px;
-    margin-top: 440px;
-    margin-left: 619px;
+    margin-top: 29%;
+    margin-left: 37%;
     background-color: #e6e6e6;
     position: absolute;
     display: flex;
@@ -445,4 +447,107 @@ body {
     color: #04594D;
     font-family: Georgia;
     padding: 10px;
+}
+
+.TrendPage {
+    width: 500px;
+    height: 1425px;
+    margin-top: 0;
+    margin-left: 65%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Trend {
+    width: 100%;
+    flex: 0 0 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.Trend h2 {
+    line-height: 65px;
+    font-weight: bold;
+    font-family: Georgia;
+    margin-left: 8%;
+    margin: 0 auto;
+
+}
+
+.Trend button {
+    background-color: #1A1A1A;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.Trend button:active {
+    color: darkgray;
+}
+
+.noticia2 {
+    height: 270px;
+    width: auto;
+    border-bottom: 2px solid #DCDCDC;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.noticia2 h5 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Georgia;
+}
+
+.descricao2 {
+    font-size: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: 10px;
+    color: #04594D;
+    font-family: 'OpenSans-Bold.ttf';
+}
+
+.TrendImage {
+    margin-left: 10px;
+    width: 40%;
+    height: 70%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.descricao {
+    height: 70%;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.info {
+    font-family: Georgia, 'Bold';
+}
+
+.descricao2:hover{
+    text-decoration: underline;
+    text-decoration-color: #04594D ;
+    cursor: pointer;
+}
+
+.descricao h5:hover{
+    text-decoration: underline;
+    text-decoration-color: #1A1A1A ;
+    cursor: pointer;
 }
