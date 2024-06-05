@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
         './src/assets/justica.jpg'
     );
 
+    
+
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -162,7 +164,7 @@ window.addEventListener('scroll', function() {
     var windowHeight = window.innerHeight;
     var scrollY = window.scrollY || window.pageYOffset;
     var documentHeight = document.body.clientHeight;
-    var triggerHeight = 50; // Ajuste conforme necessário
+    var triggerHeight = 50; 
 
     if (windowHeight + scrollY >= documentHeight - triggerHeight) {
         footer.classList.add('visible');

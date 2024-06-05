@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     var header = document.querySelector('.header');
     var content = document.querySelector('.content');
     var title = document.querySelector('h1');
-    var scrollPosition = window.scrollY;
+    var scrollPosition = window.scrollY; // Obtém a posição do scroll da tela e a armazena na variável 'scrollPosition'
     var headerHeight = header.offsetHeight;
 
     // Reduz a altura da imagem enquanto faz scroll para baixo
