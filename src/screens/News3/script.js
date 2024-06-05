@@ -49,3 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500); // milisegundos
     });
 });
+
+window.addEventListener('scroll', function() {
+    var footer = document.querySelector('footer');
+    var windowHeight = window.innerHeight;
+    var scrollY = window.scrollY || window.pageYOffset;
+    var documentHeight = document.body.clientHeight;
+    var triggerHeight = 50; 
+
+    if (windowHeight + scrollY >= documentHeight - triggerHeight) {
+        footer.classList.add('visible');
+    } else {
+        footer.classList.remove('visible');
+    }
+});

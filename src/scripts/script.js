@@ -172,3 +172,14 @@ window.addEventListener('scroll', function() {
         footer.classList.remove('visible');
     }
 });
+
+document.addEventListener('keydown', function(event) {
+    // seta para cima (keyCode 38) para baixo (keyCode 40)
+    
+    if (event.keyCode === 38) {
+        window.scrollBy(0, -50); 
+    } else if (event.keyCode === 40) {
+      
+        window.scrollBy(0, 50); 
+    }
+});
