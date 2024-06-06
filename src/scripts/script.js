@@ -1,3 +1,8 @@
+function entrada(){
+  login = prompt("Login:");
+  senha = prompt("Senha:");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
     function clonarNoticia(titulo, autor, data, imagemSrc, top, left) {

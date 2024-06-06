@@ -62,6 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       setTimeout(function() {
           shareButton.classList.remove('clicked');
-      }, 500); // milisegundos
+      }, 500);
   });
 });
