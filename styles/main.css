@@ -51,14 +51,15 @@ body {
     margin-left: 40%;
     display: flex;
     align-items: center;
-    width: 650px;
+    width: 600px;
 }
 
 .SearchBar input[type="text"] {
     flex: 1;
     padding: 8px;
     background-color: #04594D;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia;
+    border: none;
 }
 
 .SearchBar button {
@@ -85,7 +86,11 @@ body {
     border-radius: 4px;
     cursor: pointer;
     margin-left: 10px; 
+}
 
+.LoginButton button:active {
+    color: darkgray;
+    background-color: #1A1A1A;
 }
 
 .NavBar {
