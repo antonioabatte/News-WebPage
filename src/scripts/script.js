@@ -1,6 +1,12 @@
-function entrada(){
-  login = prompt("Login:");
-  senha = prompt("Senha:");
+function entrada() {
+  var login = prompt("Login:");
+  var senha = prompt("Senha:");
+
+  if (login === "admin" && senha === "admin") {
+    alert("Login bem-sucedido!");
+  } else {
+    alert("Login incorreto!");
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
