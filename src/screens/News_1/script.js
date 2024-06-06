@@ -29,3 +29,39 @@ window.addEventListener('scroll', function() {
         footer.classList.remove('visible');
     }
 });
+
+document.addEventListener('keydown', function(event) {
+  // seta para cima (keyCode 38) para baixo (keyCode 40)
+  
+  if (event.keyCode === 38) {
+      window.scrollBy(0, -50); 
+  } else if (event.keyCode === 40) {
+    
+      window.scrollBy(0, 50); 
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  var shareButton = document.getElementById('share-button');
+
+  // evento de clique
+  shareButton.addEventListener('click', function() {
+
+      shareButton.classList.add('clicked');
+
+      // copia o link
+      var url = window.location.href;
+      navigator.clipboard.writeText(url).then(function() {
+          // mensagem de alerta
+          alert('Link copiado para a área de transferência: ' + url);
+      }).catch(function() {
+          // mensagem de erro
+          alert('Não foi possível copiar o link.');
+      });
+
+      setTimeout(function() {
+          shareButton.classList.remove('clicked');
+      }, 500); // milisegundos
+  });
+});
