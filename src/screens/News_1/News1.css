@@ -71,11 +71,16 @@ body {
     padding-left: 5px;
     cursor: pointer;
     border-radius: 5px;
+    transition: transform 0.5s;
+
+}
+.icon:hover{
+    transform: scale(1.2);
 }
 
 .descricao4 {
     width: 900px;
-    margin: 2rem auto; /* Espaçamento para evitar sobreposição */
+    margin: 2rem auto;
     padding: 20px;
     background-color: #fff;
     text-align: left;
@@ -86,4 +91,20 @@ body {
     font-size: 22px; /* Espaçamento entre parágrafos */
     margin-bottom: 1em; /* Espaçamento entre parágrafos */
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+
+    text-align: center;
+    position: fixed;
+    transition: opacity 0.5s ease;
+}
+
+footer.visible {
+    opacity: 1;
 }
